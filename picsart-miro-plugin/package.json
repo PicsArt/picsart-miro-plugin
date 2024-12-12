@@ -1,0 +1,44 @@
+{
+  "name": "picsart-miro-plugin",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+
+    "@picsart/miniapp-container-editor": "^2.2.11",
+    "@picsart/ds-foundation": "^1.20.14",
+	"@picsart/ds-components": "^1.51.11",
+    "@picsart/growth-rc": "^33.13.9",
+    "@picsart/miniapps-sdk": "^6.4.10",
+    "@picsart/rc": "^33.0.11",
+    "@picsart/web-replay-sdk": "^1.7.11",
+    "axios": "^1.7.7",
+    "miro": "^0.0.1",
+    "mirotone": "5",
+    "rc-slider": "^11.1.7",
+    "react": "^18.2.0",
+    "react-color": "^2.19.3",
+    "react-colorful": "^5.6.1",
+    "react-dom": "^18.2.0",
+    "react-jss": "^10.10.0",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@picsart/miniapp-sdk-types": "^3.4.10",
+    "@vitejs/plugin-react": "^2.2.0",
+    "vite": "^3.0.3",
+
+
+
+
+
+
+	"@picsart/conventional-changelog": "^1.0.4",
+    "@picsart/eslint-config": "^1.0.11",
+    "@picsart/miniapps-sdk": "^6.1.24"
+  }
+}

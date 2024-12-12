@@ -1,0 +1,91 @@
+@import 'mirotone/dist/styles.css';
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Segoe UI,
+    Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+#root {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: var(--space-medium);
+}
+
+img {
+  max-width: 300px;
+  height: auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: span 12;
+  margin-top: var(--space-large);
+}
+
+.footer-buttons {
+  display: flex;
+  margin-top: var(--space-small);
+}
+
+.picsart-link {
+  display: flex;
+  align-items: center;
+}
+
+.picsart-logo {
+  width: 100px;
+  height: auto;
+}
+
+.button-tertiary {
+  background: none;
+  border: none;
+  padding: var(--space-small);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-settings,
+.icon-help-question {
+  font-size: var(--icon-size-large);
+  color: var(--icon-color);
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  font-size: var(--icon-size-large);
+  color: var(--icon-color);
+}
+
+.footer-links {
+  font-size: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: -30px;
+}
+
+.footer-links div {
+  display: inline-block;
+  white-space: nowrap;
+  margin-right: 5px;
+}

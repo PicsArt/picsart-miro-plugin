@@ -1,0 +1,46 @@
+.button-container {
+	display: flex;
+	width: 320px;
+	height: 75px;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #e9e9e9;
+	border-radius: 7px;
+	padding: 7px;
+	box-shadow: 0 4px 8px rgba(202, 202, 202, 0.2);
+	margin-bottom: 20px;
+}
+
+.custom-button {
+	width: 48%;
+	height: 64px;
+	background-color: #e9e9e9;
+	border: none;
+	padding: 10px 20px;
+	font-size: 17px;
+	color: #d700d7;
+	cursor: pointer;
+	font-weight: bold;
+	/* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+	transition: background-color 0.3s, transform 0.3s;
+	border-radius: 8px;
+	margin: 0;
+}
+
+.custom-button:hover {
+	/* background-color: #e6e6e6; */
+	transform: scale(1.03);
+}
+
+.custom-button:active {
+	transform: scale(0.95);
+}
+
+.custom-button.selected {
+	background-color: white;
+	/* box-shadow: 0 0 6px rgba(132, 132, 132, 0.5); */
+}
+
+.button-container .custom-button:not(:last-child) {
+	margin-right: 10px;
+}

@@ -1,0 +1,31 @@
+.buy-credits-container {
+	align-items: center;
+	justify-items: right;
+  }
+
+.change-api-key-text {
+    font-size: 12px;
+    cursor: pointer;
+    color: #158380;
+}
+
+.current-balance {
+
+	font-weight: 450;
+	font-size: 23px;
+	color: #151515;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.upgrade-your-plan {
+
+	color: #535353;
+	margin-bottom: 16px;
+}
+
+.credits {
+
+	color: #000000;
+	font-size: 14px;
+}

@@ -1,0 +1,10 @@
+.checkboard-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    pointer-events: none; 
+	border: 1px solid #bababa;
+	border-radius: 5px;
+}
+
+
