@@ -1,0 +1,28 @@
+.buy-credits {
+    width: 135px;
+    height: 43px;
+    border: 1px solid #28a745;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+	justify-content: center;
+    cursor: pointer;
+    padding: 0 12px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #0ea088;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease, background-color 0.3s ease;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buy-credits:hover {
+    background-color: #007c67;
+	transform: scale(1.05);
+
+}
