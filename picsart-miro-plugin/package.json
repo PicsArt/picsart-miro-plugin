@@ -11,7 +11,7 @@
 
     "@picsart/miniapp-container-editor": "^2.2.11",
     "@picsart/ds-foundation": "^1.20.14",
-	"@picsart/ds-components": "^1.51.11",
+	  "@picsart/ds-components": "^1.51.11",
     "@picsart/growth-rc": "^33.13.9",
     "@picsart/miniapps-sdk": "^6.4.10",
     "@picsart/rc": "^33.0.11",
