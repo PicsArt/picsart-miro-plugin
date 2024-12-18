@@ -34,7 +34,8 @@ const ProcessingButton = (props) => {
                     headers: {
                         accept: 'application/json',
                         'content-type': 'multipart/form-data',
-                        'X-Picsart-API-Key': apiKey
+                        'X-Picsart-API-Key': apiKey,
+                        'X-Picsart-Plugin': 'Miro'
                     },
                     data: form,
                 };
@@ -84,7 +85,8 @@ const ProcessingButton = (props) => {
                     url: 'https://api.picsart.io/tools/1.0/removebg',
                     headers: {
                         accept: 'application/json',
-                        'X-Picsart-API-Key': apiKey
+                        'X-Picsart-API-Key': apiKey,
+                        'X-Picsart-Plugin': 'Miro'
                     },
                     data: form,
                 };

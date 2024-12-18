@@ -26,7 +26,8 @@ const Balance = ({credits, setCredits}) => {
                   url: 'https://api.picsart.io/tools/1.0/balance',
                   headers: {
                     accept: 'application/json',
-                    'X-Picsart-API-Key': apiKey
+                    'X-Picsart-API-Key': apiKey,
+                    'X-Picsart-Plugin': 'Miro'
                   }
                 };
                 const response = await axios.request(options);
