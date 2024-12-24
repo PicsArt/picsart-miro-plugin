@@ -24,7 +24,7 @@ const Footer = () => {
             className="picsart-logo"
           />
         </a>
-        <div style={{ marginTop: "5px" }}>© 2024 PicsArt, Inc.</div>
+        <div style={{ marginTop: "5px" }}>© 2025 PicsArt, Inc.</div>
       </div>
     </div>
   );

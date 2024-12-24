@@ -27,7 +27,6 @@ const Balance = ({credits, setCredits}) => {
                   headers: {
                     accept: 'application/json',
                     'X-Picsart-API-Key': apiKey,
-                    'X-Picsart-Plugin': 'Miro'
                   }
                 };
                 const response = await axios.request(options);
