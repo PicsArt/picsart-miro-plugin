@@ -70,7 +70,7 @@ const App = () => {
             </p>
 
             <p style={{ fontSize: textSize.referenceParagraphSize, marginTop: "-10px", display: "inline"}} className="description text-alt">
-              1. To use the plugin, go to <span onClick={() => window.open('https://picsart.com/', '_blank')} style={{ color: "#C209C1", cursor: "pointer", }}>picsart.io</span> and create a free account. <div></div>
+              1. To use the plugin, go to <span onClick={() => window.open('https://console.picsart.io', '_blank')} style={{ color: "#C209C1", cursor: "pointer", }}>picsart.io</span> and create a free account. <div></div>
             </p>
             <p style={{ fontSize: textSize.referenceParagraphSize, marginTop: "-10px", display: "inline" }} className="description text-alt">
               2. Go to the <span onClick={() => window.open('https://console.picsart.io', '_blank')} style={{ color: "#C209C1", cursor: "pointer", }}>Console</span>, copy and past your API key here.
