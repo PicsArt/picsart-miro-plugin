@@ -6,6 +6,7 @@
   Safari enforces HTTPS; therefore, it doesn't allow localhost through HTTP.
 - For more information, visit our [developer documentation](https://developers.miro.com).
 
+
 ### How to start locally
 
 - Run `npm i` to install dependencies.
