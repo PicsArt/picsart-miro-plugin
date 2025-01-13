@@ -37,7 +37,5 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: us-east-1
         run: |
-          aws s3 sync picsart-miro-plugin/build s3://cdk-hnb659fds-assets-650251686079-us-east-1 --delete
-      
-
-
+          aws s3 sync picsart-miro-plugin/dist s3://cdk-hnb659fds-assets-650251686079-us-east-1 --delete
+    
