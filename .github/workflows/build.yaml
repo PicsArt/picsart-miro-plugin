@@ -20,9 +20,9 @@ jobs:
 
       - name: Install dependencies
         run: |
+          cd picsart-miro-plugin
           echo "@picsart:registry=https://gitlab.com/api/v4/packages/npm/" >> .npmrc
           echo "//gitlab.com/api/v4/packages/npm/:_authToken=${GITLAB_REG_TOKEN}" >> .npmrc
-          cd picsart-miro-plugin
           npm install
 
       - name: Run build
