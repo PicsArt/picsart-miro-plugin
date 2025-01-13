@@ -16,20 +16,20 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '22'
+          node-version: '20'
 
       - name: Install dependencies
+        env:
+            GITLAB_REG_TOKEN: ${{ secrets.GITLAB_REG_TOKEN }}
         run: |
-          cd picsart-miro-plugin
-          echo "@picsart:registry=https://gitlab.com/api/v4/packages/npm/" >> .npmrc
-          echo "//gitlab.com/api/v4/packages/npm/:_authToken=${GITLAB_REG_TOKEN}" >> .npmrc
-          npm install
+            echo "//gitlab.com/api/v4/packages/npm/:_authToken=${GITLAB_REG_TOKEN}" >> .npmrc
+            cd picsart-miro-plugin
+            npm install
 
       - name: Run build
         run: |
           cd picsart-miro-plugin
           npm run build
       
-
 
 
