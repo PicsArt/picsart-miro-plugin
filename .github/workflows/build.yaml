@@ -22,8 +22,8 @@ jobs:
         env:
             GITLAB_REG_TOKEN: ${{ secrets.GITLAB_REG_TOKEN }}
         run: |
-            echo "//gitlab.com/api/v4/packages/npm/:_authToken=${GITLAB_REG_TOKEN}" >> .npmrc
             cd picsart-miro-plugin
+            echo "//gitlab.com/api/v4/packages/npm/:_authToken=${GITLAB_REG_TOKEN}" >> .npmrc
             npm install
 
       - name: Run build
