@@ -3,7 +3,7 @@ name: Auto Build
 on:
   push:
     branches:
-      - 'COPS-3786'
+      - 'main'
 
 jobs:
   build:
