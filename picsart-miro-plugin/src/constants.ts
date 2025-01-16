@@ -6,5 +6,5 @@ export const textSize = {
 	referenceParagraphSize : "14px",
 };
 
-export const QUERY_PARAMS = "?utm_source=figma&utm_medium=app&utm_campaign=plugins";
+export const QUERY_PARAMS = "?utm_source=miro&utm_medium=app&utm_campaign=plugins";
 export const CONSOLE = "https://console.picsart.io" + QUERY_PARAMS;
