@@ -76,7 +76,7 @@ const ChangeKey = ({ handleModalClose }) => {
             textDecoration: "underline",
             color: "#158380"
           }}
-          onClick={() => window.open("https://console.picsart.io/dashboard/apps/")}
+          onClick={() => window.open("https://console.picsart.io/dashboard/apps/?utm_source=miro&utm_medium=app&utm_campaign=plugins")}
         >
           Get your Picsart API Key
         </div> 
