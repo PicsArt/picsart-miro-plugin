@@ -5,3 +5,6 @@ export const textSize = {
 	paragraphWeight : "500",
 	referenceParagraphSize : "14px",
 };
+
+export const QUERY_PARAMS = "?utm_source=miro&utm_medium=app&utm_campaign=plugins";
+export const CONSOLE = "https://console.picsart.io" + QUERY_PARAMS;

@@ -30,7 +30,7 @@ const ProcessingButton = (props) => {
 
                 const options = {
                     method: 'POST',
-                    url: 'https://api.picsart.io/tools/1.0/upscale',
+                    url: 'https://api.picsart.io/tools/1.0/miro/upscale',
                     headers: {
                         accept: 'application/json',
                         'content-type': 'multipart/form-data',
@@ -82,7 +82,7 @@ const ProcessingButton = (props) => {
 
                 const options = {
                     method: 'POST',
-                    url: 'https://api.picsart.io/tools/1.0/removebg',
+                    url: 'https://api.picsart.io/tools/1.0/miro/removebg',
                     headers: {
                         accept: 'application/json',
                         'X-Picsart-API-Key': apiKey,

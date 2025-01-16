@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import { ApiKeyContext } from "../../settings/apiKeyProvider";
 import './changeKey.css';
+import { CONSOLE } from "../../constants";
 
 const ChangeKey = ({ handleModalClose }) => {
   const { apiKey, updateApiKey } = useContext(ApiKeyContext);
@@ -76,7 +77,7 @@ const ChangeKey = ({ handleModalClose }) => {
             textDecoration: "underline",
             color: "#158380"
           }}
-          onClick={() => window.open("https://console.picsart.io/dashboard/apps/")}
+          onClick={() => window.open(CONSOLE)}
         >
           Get your Picsart API Key
         </div> 
