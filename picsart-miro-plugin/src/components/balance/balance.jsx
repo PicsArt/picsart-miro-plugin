@@ -49,12 +49,13 @@ const Balance = ({credits, setCredits}) => {
             <div className="buy-credits-container">
 				<BuyCredits />
 			</div>
-            <div
+            <div>
+              <button 
               className='change-api-key-text'
               onClick={() => {
                 onChangeApiKey()
-              }}
-            >Change API Key</div>
+              }}>Change API Key</button>
+            </div>
             {isKeyChange && (
               <ChangeKey handleModalClose={handleModalClose} />
             )}

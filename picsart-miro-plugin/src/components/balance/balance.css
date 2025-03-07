@@ -4,6 +4,8 @@
   }
 
 .change-api-key-text {
+		border: none;
+		background-color: white;
     font-size: 12px;
     cursor: pointer;
     color: #158380;

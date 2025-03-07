@@ -69,17 +69,19 @@ const ChangeKey = ({ handleModalClose }) => {
         >
           Submit
         </button>
-        <div
-          style={{
-            fontSize: "12px",
-            cursor: "pointer",
-            textDecoration: "underline",
-            color: "#158380"
-          }}
-          onClick={() => window.open("https://console.picsart.io/dashboard/apps/?utm_source=miro&utm_medium=app&utm_campaign=plugins")}
-        >
-          Get your Picsart API Key
-        </div> 
+        <div>
+          <button
+            style={{
+              backgroundColor: "white",
+              border: "none",
+              fontSize: "12px",
+              cursor: "pointer",
+              textDecoration: "underline",
+              color: "#158380"
+            }}
+            onClick={() => window.open("https://console.picsart.io/dashboard/apps/?utm_source=miro&utm_medium=app&utm_campaign=plugins")}
+          >Get your Picsart API Key</button>
+        </div>
         <span style={{ cursor: "pointer" }} className="icon icon-close modal-close" onClick={handleModalClose}></span>
       </div>
     </div>

@@ -109,23 +109,23 @@ const ProcessingButton = (props) => {
 
     return (
         <div>
-            <div 
-            className={props.disabledButton ? "start-processing-disabled" : "start-processing"}
-			onClick={ async () => {
-				if (!props.imagesArray.length) {
-					setErrorText("Please choose image");
-				} else if (props.filterOptions) {
-                    setErrorText('');
-					await upscaleHandler(props.filterOptions);
-				} else {
-                    setErrorText('');
-					await removeBgHandler(props.imagesArray, props.setImagesArray, props.removeHandleProcess, props.removeFilterOptions);
-				}
-			}
-			}
-			>
-			    <span>Start Processing</span>
-		    </div>
+            <div>
+                <button
+                className={props.disabledButton ? "start-processing-disabled" : "start-processing"}
+                onClick={ async () => {
+                    if (!props.imagesArray.length) {
+                        setErrorText("Please choose image");
+                    } else if (props.filterOptions) {
+                        setErrorText('');
+                        await upscaleHandler(props.filterOptions);
+                    } else {
+                        setErrorText('');
+                        await removeBgHandler(props.imagesArray, props.setImagesArray, props.removeHandleProcess, props.removeFilterOptions);
+                    }
+                }
+                }
+                >Start Processing</button>
+            </div>
             {errorText && <ErrorMessage message={errorText} />}
 			{isLoading && <Loading/>}
         </div>
