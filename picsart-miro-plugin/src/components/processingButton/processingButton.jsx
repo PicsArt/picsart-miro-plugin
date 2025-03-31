@@ -7,12 +7,16 @@ import Loading from '../loading/loading';
 
 
 const ProcessingButton = (props) => {
+    console.log(22222);
+    
 	const [isLoading, setLoading] = useState(false);
 	const [errorText, setErrorText] = useState('');
     const { apiKey } = useContext(ApiKeyContext);
 
 
     async function upscaleHandler(filterOptions) {
+        console.log("upscale");
+        
         if (props.disabledButton) return;
 		setLoading(prev => true);
 
@@ -55,6 +59,7 @@ const ProcessingButton = (props) => {
     }
 
     async function removeBgHandler(imagesArray, setImagesArray, removeHandleProcess, removeFilterOptions) {
+        console.log("remove bg handler");
         if (props.disabledButton) return;
         
 		setLoading(prev => true);

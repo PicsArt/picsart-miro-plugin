@@ -1,9 +1,11 @@
-import useStyles from '../../useStyles';
-import { Preloader } from '@picsart/ds-components/Preloader';
+import "./styles.css";
 
 const Loading = () => {
-	useStyles();
-	return (<Preloader/>)
+	return  <div className="loading-spinner-container">
+	<div className="loading-spinner"></div>
+	<div className="icon-container">
+	</div>
+  </div>
 };
 
 export default Loading;
