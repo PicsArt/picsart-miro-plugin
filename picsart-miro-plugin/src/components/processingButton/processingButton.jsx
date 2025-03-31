@@ -7,7 +7,6 @@ import Loading from '../loading/loading';
 
 
 const ProcessingButton = (props) => {
-    console.log(22222);
     
 	const [isLoading, setLoading] = useState(false);
 	const [errorText, setErrorText] = useState('');
