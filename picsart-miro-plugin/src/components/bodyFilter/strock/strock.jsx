@@ -11,7 +11,13 @@ const Strock = ({setStrock}) => {
 
 	return (
 		<>
-			<div className="main-box" onClick={() => setIsOpen((prev) => !prev)}>
+			<div className="main-box" tabIndex={0}
+				onKeyDown={(event) => {
+					if (event.key === "Enter") {
+						setIsOpen((prev) => !prev)
+					}
+				}} 
+		  		onClick={() => setIsOpen((prev) => !prev)}>
 				<span>Strock</span>
 				<span className="plus-icon">{isOpen ? '-' : '+'}</span>
 			</div>

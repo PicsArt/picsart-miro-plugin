@@ -11,7 +11,13 @@ const Shadow = ({ setShadow }) => {
 
     return (
 		<>
-			<div className="main-box" onClick={() => setIsOpen((prev) => !prev)}>
+			<div className="main-box" tabIndex={0}
+                onKeyDown={(event) => {
+                    if (event.key === "Enter") {
+						setIsOpen((prev) => !prev)
+                    }
+                }}
+				onClick={() => setIsOpen((prev) => !prev)}>
 				<span>Shadow</span>
 				<span className="plus-icon">{isOpen ? '-' : '+'}</span>
 			</div>
@@ -25,6 +31,7 @@ const Shadow = ({ setShadow }) => {
 					<div className="slider-wrapper">
 						<label className="slider-label">Blur:</label>
 						<input
+							tabIndex={0}
 							type="range"
 							min="0"
 							max="100"

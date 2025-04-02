@@ -20,10 +20,10 @@ const ImputFilter = ({ options, onChange, label, onDropdownClick }) => {
   };
 
   return (
-
-
 	 <div className="file-format-container">
-       <div className="main-box" onClick={() => setIsOpen((prev) => !prev)}>
+       <div className="main-box" tabIndex={0}
+            onKeyDown={(event) => event.key === "Enter" && setIsOpen((prev) => !prev)}
+            onClick={() => setIsOpen((prev) => !prev)}>
          <span>{selectedOption == null ? label : selectedOption}</span>
          <span className="plus-icon">{isOpen ? '-' : '+'}</span>
        </div>
@@ -31,6 +31,8 @@ const ImputFilter = ({ options, onChange, label, onDropdownClick }) => {
          <div className="dropdown-menu">
            {options.map((option) => (
              <div
+               tabIndex={0}
+               onKeyDown={(event) => event.key === "Enter" && handleSelect(option)}
                key={option}
                className="dropdown-item"
                onClick={() => handleSelect(option)}

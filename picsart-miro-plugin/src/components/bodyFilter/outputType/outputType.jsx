@@ -15,15 +15,35 @@ const OutputType = ({ setOutputType }) => {
 
   	return (
     	<div className="file-format-container">
-      		<div className="main-dropdown-box" onClick={() => setIsOpen((prev) => !prev)}>
+      		<div className="main-dropdown-box" 
+				tabIndex={0}
+				onKeyDown={(event) => {
+					if (event.key === "Enter") {
+						setIsOpen((prev) => !prev)
+					}
+				}} 
+			    onClick={() => setIsOpen((prev) => !prev)}>
         		<span>{choice ? selectedFormat.toUpperCase() : "Output Type"}</span>
         		<span className="plus-icon">{isOpen ? '-' : '+'}</span>
       		</div>
 
       		{isOpen && (
         	<div className="dropdown">
-          		<div className="dropdown-item" onClick={() => handleFormatSelect("cutout")}>Cutout</div>
-          		<div className="dropdown-item" onClick={() => handleFormatSelect("mask")}>Mask</div>
+          		<div className="dropdown-item" tabIndex={0}
+				onKeyDown={(event) => {
+					if (event.key === "Enter") {
+						handleFormatSelect("cutout")
+					}
+				}} 
+				onClick={() => handleFormatSelect("cutout")}>Cutout</div>
+          		<div className="dropdown-item"
+				tabIndex={0}
+				onKeyDown={(event) => {
+					if (event.key === "Enter") {
+						handleFormatSelect("mask")
+					}
+				}} 
+				onClick={() => handleFormatSelect("mask")}>Mask</div>
         	</div>
       		)}
     	</div>

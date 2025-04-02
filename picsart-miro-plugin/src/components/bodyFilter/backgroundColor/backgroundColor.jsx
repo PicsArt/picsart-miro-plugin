@@ -19,6 +19,12 @@ const BackgroundColor = ({ setBackgroundColor }) => {
             <div
                 className="main-box"
                 onClick={toggleColorPicker}
+                tabIndex={0}
+                onKeyDown={(event) => {
+                    if (event.key === "Enter") {
+                      toggleColorPicker();
+                    }
+                }}
             >
                 <span>Background Color</span>
                 <img
