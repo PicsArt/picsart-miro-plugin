@@ -20,7 +20,7 @@
     "three": "^0.170.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^2.2.0",
-    "vite": "^3.2.11"
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.2.4"
   }
 }
